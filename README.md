@@ -1,12 +1,68 @@
-# React + Vite
+CommunionHub - React Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 About the Project
 
-Currently, two official plugins are available:
+CommunionHub is a React-based web application designed to bring people of different faiths together through events and community interactions. Users can explore various events, create their own, and engage with a like-minded community.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Features
 
-## Expanding the ESLint configuration
+🌍 Home Page with an introduction to the platform
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📆 Event Listing Page to explore various events
+
+➕ Add Events functionality
+
+🔥 Interactive Animations with Framer Motion & @hemant0621/animation
+
+📱 Fully Responsive design using Tailwind CSS
+
+⚡ Smooth Navigation with React Router
+
+🛠️ Tech Stack
+
+Frontend: React.js, Tailwind CSS, JavaScript
+
+Animation: Framer Motion, @hemant0621/animation
+
+Routing: React Router
+
+State Management: useState, useEffect
+
+Deployment: Vercel
+
+🔗 Live Demo
+
+🌐 https://communion-hub-theta-black.vercel.app/
+
+🚀 Installation
+
+To run this project locally, follow these steps:
+
+# Clone the repository
+git clone https://github.com/your-username/communionhub.git
+
+# Navigate to the project folder
+cd communionhub
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+👨‍💻 How It Works
+
+Navigate to the Home Page.
+
+Explore the list of Events.
+
+Use the Add Events feature to contribute.
+
+Enjoy the smooth animations and interactive UI.
+
+📧 Contact
+
+💡 Created by: Bharti Bhoyare
+📩 Email: bhartibhoyare@gmail.com
+🔗 GitHub: https://github.com/BhartiBhoyare
+
