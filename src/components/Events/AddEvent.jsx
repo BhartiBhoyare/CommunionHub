@@ -7,6 +7,7 @@ const AddEvent = ({ addEvent }) => {
   const [date, setDate] = useState("");
   const [category, setCategory] = useState("Add Category");
   const [description, setDescription] = useState("");
+  const [location, setLocation] = useState("");
   const [image, setImage] = useState(null);
 
   const handleImageChange = (e) => {
@@ -26,12 +27,13 @@ const AddEvent = ({ addEvent }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title && date && category !== "Add Category" && description && image) {
-      addEvent({ title, date, category, description, location: "TBD", image });
+    if (title && date && category !== "Add Category" && description && location && image) {
+      addEvent({ title, date, category, description, location, image });
       setTitle("");
       setDate("");
       setCategory("Add Category");
       setDescription("");
+      setLocation("");
       setImage(null);
     }
   };
@@ -84,6 +86,15 @@ const AddEvent = ({ addEvent }) => {
             <option value="Social">Social</option>
             <option value="Charity">Charity</option>
           </motion.select>
+          
+          <motion.input
+            type="text"
+            placeholder="Event Location"
+            className="w-full p-2 border rounded outline-[#526039]"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            whileFocus={{ scale: 1.05 }}
+          />
 
           <div className="w-full">
             <motion.input
