@@ -26,7 +26,7 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/communionhub.git
+git clone https://github.com/bhartibhoyare/communionhub.git
 
 # Navigate to the project folder
 cd communionhub
