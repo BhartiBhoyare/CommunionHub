@@ -38,11 +38,14 @@ npm install
 npm run dev
 ```
 <h2>👨‍💻 How It Works</h2>
-Navigate to the Home Page.
-Explore the list of Events.
-Use the Add Events feature to contribute.
-Enjoy the smooth animations and interactive UI.
+
+Navigate to the **Home Page**.
+Explore the list of **Events**.
+Use the **Add Events** feature to contribute.
+Enjoy the **smooth animations** and **interactive UI**.
+
 <h2>📧 Contact</h2>
+
 💡 Created by: Bharti Bhoyare
-📩 Email: communion@gmail.com
-🔗 GitHub: BhartiBhoyare
+📩 Email: bhartibhoyare@gmail.com
+🔗 GitHub: https://github.com/BhartiBhoyare
