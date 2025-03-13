@@ -7,7 +7,7 @@ import { Animation } from "@hemant0621/animation";
 
 const Footer = () => {
   return (
-    <footer className="text-[#ffff] bg-[#526039] p-4 md:p-12">
+    <footer className="text-[#ffff] bg-[#526039] p-4 md:p-12 mt-auto">
       <div className="flex flex-col md:flex-row gap-4 justify-between items-start">
         <div ref={Animation("left", "10px", 100)} className="space-y-6">
           <h2 className="flex text-3xl font-extrabold text-[#e3edbe] mb-3">

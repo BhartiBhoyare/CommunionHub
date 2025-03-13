@@ -40,7 +40,7 @@ const AddEvent = ({ addEvent }) => {
 
   return (
     <motion.div
-      className="flex items-center justify-center p-6 md:m-0"
+      className="flex min-h-screen items-center justify-center p-6 md:m-0"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
