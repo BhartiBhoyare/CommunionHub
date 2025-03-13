@@ -1,4 +1,4 @@
-****CommunionHub - React Web App****
+h1#**CommunionHub - React Web App**
 
 🚀 About the Project
 
