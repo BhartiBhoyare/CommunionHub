@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import logo from "../assets/logo.jpg";
 import { FaChevronDown, FaAngleRight } from "react-icons/fa";
+import { Animation } from "@hemant0621/animation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
       {/* Laptop Navbar */}
 
       <nav className="hidden md:flex px-8 py-2 text-[#526039] justify-between items-center">
-        <div className="flex items-center">
+        <div ref={Animation("left", "20px", 100)} className="flex items-center">
           <img
             src={logo}
             alt="CommunionHub Logo"
@@ -52,7 +53,7 @@ const Navbar = () => {
                 Events <FaChevronDown className="ml-1" />
               </button>
               {dropdownOpen && (
-                <ul className="absolute z-50 right-10 mt-1 text-black bg-gray-50 rounded-lg py-2">
+                <ul className="absolute z-50 right-8 mt-1 text-black bg-gray-50 rounded-sm py-2">
                   <li>
                     <Link
                       onClick={() => {
@@ -74,7 +75,7 @@ const Navbar = () => {
                       to="/events/exploreevents"
                       className="px-2 py-2 text-sm font-bold text-[#526039] hover:underline"
                     >
-                       Upcoming Events
+                       Explore Events
                     </Link>
                   </li>
                 </ul>
@@ -87,7 +88,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
 
       <nav className="flex items-center justify-between py-3 px-4 md:hidden">
-        <div className="flex items-center">
+        <div ref={Animation("left", "10px", 100)} className="flex items-center">
           <img
             src={logo}
             alt="CommunionHub Logo"
@@ -100,7 +101,7 @@ const Navbar = () => {
             CommunionHub
           </h1>
         </div>
-        <div className="md:hidden">
+        <div ref={Animation("right", "10px", 100)} className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -174,7 +175,7 @@ const Navbar = () => {
                       to="/events/exploreevents"
                       className="px-2 text-sm font-bold text-[#526039] hover:underline"
                     >
-                       Upcoming Events
+                       Explore Events
                     </Link>
                   </li>
                 </ul>

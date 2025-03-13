@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BannerImage from '../../assets/communion-banner.jpg'
+import { Animation } from "@hemant0621/animation";
 
 const Home = () => (
-  <div className="relative h-screen flex flex-col justify-center items-center bg-cover">
+  <div className="h-screen flex flex-col justify-center items-center bg-cover">
     <div>
       <img className="h-screen w-screen object-cover"
         src={BannerImage}
@@ -11,7 +12,7 @@ const Home = () => (
       />
     </div>
     <div className="absolute opacity-40 bg-[#526039] h-screen object-cover w-full"></div>
-    <div className="absolute bg-gradient-to-br from-[#526039] via-[#] to-[#e3edbe] m-4 bg-opacity-60 px-6 py-8 lg:p-14 rounded-lg shadow-lg max-w-3xl text-white text-center">
+    <div ref={Animation("top", "30px", 100)} className="absolute bg-gradient-to-br from-[#526039] from-20% via-[#] to-[#e3edbe] m-4 bg-opacity-60 px-6 py-10 lg:p-14 rounded-lg shadow-lg max-w-3xl text-white text-center">
       <h1 className="lg:text-4xl md:text-4xl text-2xl font-bold mb-2">
         Welcome to{" "}
         <span className="text-[#e3edbe] font-extrabold">CommunionHub</span>
@@ -29,7 +30,7 @@ const Home = () => (
         to="/events/exploreevents"
         className="bg-white text-[#526039] px-6 py-1 lg:px-8 lg:py-3 rounded-md text-base lg:text-lg font-semibold shadow-md hover:bg-[#ecf4cb] transition"
       >
-        Upcoming Events
+        Explore Events
       </Link>
     </div>
   </div>

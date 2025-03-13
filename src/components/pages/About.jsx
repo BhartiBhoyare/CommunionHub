@@ -1,9 +1,10 @@
 import React from "react";
 import about from "../../assets/about.jpg";
+import { Animation } from "@hemant0621/animation";
 
 const About = () => (
   <div className="flex flex-col-reverse lg:flex-row mx-auto p-6 lg:p-8 lg:mt-10 justify-center items-center text-center">
-    <div className="lg:pr-10">
+    <div ref={Animation("left", "30px", 100)} className="lg:pr-10">
       <h1 className="text-2xl lg:text-4xl font-extrabold text-[#526039] mb-0 lg:mb-6">
         About CommunionHub
       </h1>
@@ -30,7 +31,7 @@ const About = () => (
         </p>
       </div>
     </div>
-    <img className="size-40 md:size-60 lg:size-80 mb-4 lg:mb-0" src={about} alt="" />
+    <img ref={Animation("right", "30px", 100)} className="size-40 md:size-60 lg:size-80 mb-4 lg:mb-0" src={about} alt="" />
   </div>
 );
 
